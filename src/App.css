@@ -1,0 +1,229 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Roboto:wght@100..900&display=swap');
+
+
+/* Colore di sfondo globale */
+body {
+  background-color: #404040;
+  margin: 0;
+}
+
+
+
+/* Stile per l'header */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo immagine */
+.header .logo img {
+  max-width: 100%;
+  height: auto;
+  /* Mantiene le proporzioni */
+  object-fit: cover;
+  /* Adatta l'immagine all'elemento */
+}
+
+
+
+
+/* Navbar generale */
+.navbar {
+  margin-top: 30px;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  background-color: #404040;
+  top: 0;
+  z-index: 10;
+}
+
+/* Lista degli elementi della navbar */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+/* Pulsanti della navbar */
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #B38738;
+  /* Oro */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #d4a143;
+  /* Elegante colore lavanda in hover */
+  color: white;
+}
+
+/* Navbar responsive */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
+/* Hero */
+.hero {
+  color: white;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.hero .container {
+  max-width: 850px;
+  margin-bottom: 50px;
+}
+
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.h1_hero {
+  font-family: "Corinthia", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B38738;
+  font-size: clamp(35px, 8vw, 80px);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #d4af37 !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Prezzi.css */
+
+
+/* Titolo */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+
+
+
+/* Contenitore della tabella */
+.table-container {
+  max-width: 600px;
+  /* Limita la larghezza della tabella */
+  margin: 0 auto;
+  /* Centra la tabella */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Stile della tabella */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Stile delle celle (th e td) */
+th,
+td {
+  padding: 15px 20px;
+  text-align: left;
+}
+
+/* Stile delle intestazioni */
+th {
+  /* Colore richiesto per le intestazioni */
+  font-family: "Corinthia", serif;
+  font-size: 30px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* Alternanza colori righe */
+tr:nth-child(even) {
+  background-color: #B38738;
+}
+
+tr:nth-child(odd) {
+  background-color: #B38738;
+}
+
+/* Hover sulle righe */
+tr:hover {
+  background-color: #d4a143;
+  cursor: pointer;
+}
+
+/* Stile celle */
+td {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Colore prezzo */
+.price {
+  color: white;
+  font-weight: bold;
+  text-align: right;
+}
+
+.price_container {
+  max-width: 850px;
+}
+
+.h1_price {
+  font-family: "Corinthia", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B38738;
+  font-size: clamp(35px, 8vw, 80px);
+}
