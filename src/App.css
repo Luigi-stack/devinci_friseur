@@ -53,39 +53,52 @@ body {
 }
 
 /* Pulsanti della navbar */
+.navbar ul {
+  display: flex;
+  justify-content: center; /* Allinea i link al centro */
+  align-items: center;
+  flex-wrap: wrap; /* Permette ai link di ridursi senza andare a capo */
+  padding: 0;
+  list-style: none;
+}
+
 .navbar ul li {
-  margin: 0 10px;
+  margin: 0 5px; /* Riduci il margine per mantenere spazio tra i link */
+  flex-shrink: 1; /* Permette ai link di rimpicciolirsi se lo spazio è poco */
 }
 
 .navbar ul li a {
   text-decoration: none;
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 10px 20px; /* Spaziatura per i link */
+  font-size: 1rem; /* Dimensione del testo */
   font-weight: bold;
   color: white;
-  background-color: #B38738;
-  /* Oro */
+  background-color: #B38738; /* Oro */
   transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap; /* Evita che il testo vada a capo */
 }
 
 .navbar ul li a:hover {
-  background-color: #d4a143;
-  /* Elegante colore lavanda in hover */
+  background-color: #d4a143; /* Cambia colore in hover */
   color: white;
 }
 
 /* Navbar responsive */
 @media (max-width: 768px) {
   .navbar ul {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Permette ai link di rimpicciolirsi invece di andare a capo */
+    justify-content: center; /* Mantiene tutto centrato */
   }
 
   .navbar ul li {
-    margin: 10px 0;
+    margin: 3px; /* Riduce il margine tra i link */
+  }
+
+  .navbar ul li a {
+    padding: 6px 12px; /* Riduce il padding per adattarsi agli schermi piccoli */
+    font-size: 0.85rem; /* Riduce leggermente la dimensione del testo */
   }
 }
-
 
 
 
@@ -218,6 +231,7 @@ td {
 
 .price_container {
   max-width: 850px;
+  margin-top: 50px;
 }
 
 .h1_price {
@@ -226,4 +240,37 @@ td {
   font-style: normal;
   color: #B38738;
   font-size: clamp(35px, 8vw, 80px);
+}
+
+
+/*Kontakt*/
+.kontakte-container {
+  padding: 20px;
+  background-color: #B38738;
+}
+
+.kontakte-phone {
+  text-decoration: none;
+  color: inherit;
+}
+
+.map {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+   filter: grayscale(100%);
+}
+
+
+.image-galleria {
+  width: 100%; /* Occupa tutta la larghezza del contenitore */
+  height: 100%; /* Assicura che l'altezza sia uguale alla larghezza */
+  object-fit: cover; /* Rende l'immagine "coprire" l'area senza distorsioni */
+  display: block; /* Assicura che l'immagine venga trattata come un blocco */
+}
+
+.col img {
+  width: 100%;
+  height: auto;
 }

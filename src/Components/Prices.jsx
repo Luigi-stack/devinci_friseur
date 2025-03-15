@@ -47,7 +47,7 @@ function Prezzi() {
         <>
             <Container className='price_container'>
                 <Row>
-                    <Col md={6} sm={12}>
+                    <Col md={6} sm={12} className='mb-5'>
                         <section id="prices" className="prices">
                             <h1 className='h1_price'>Unsere Preise</h1>
                             <div className="table-container">
