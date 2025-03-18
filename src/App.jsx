@@ -22,6 +22,9 @@ function App() {
           <Route path='/' element={<Hero />}></Route>
           <Route path='/galerie' element={<Gallery />}></Route>
           <Route path='/kontakt' element={<Kontakt />}></Route>
+
+          <Route path="*" element={<Hero />}></Route>
+
         </Routes>
 
         <Footer />
