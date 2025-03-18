@@ -4,7 +4,7 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 
-const Kontakte = () => {
+const Kontakt = () => {
   return (
     <Container className='mt-4'>
       <Row>
@@ -45,4 +45,4 @@ const Kontakte = () => {
   );
 };
 
-export default Kontakte;
+export default Kontakt;

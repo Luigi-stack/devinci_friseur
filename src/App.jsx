@@ -6,7 +6,7 @@ import Hero from './Components/Hero'
 import Nav_bar from './Components/Nav_bar'
 import Prezzi from './Components/Prices'
 import Gallery from './Components/Gallery'
-import Kontakte from './Components/Kontakt'
+import Kontakt from './Components/Kontakt'
 
 function App() {
 
@@ -19,12 +19,10 @@ function App() {
 
 
         <Routes>
-          <Route path='/prices' element={<Prezzi />}></Route>
-          <Route path='/team' element={<Hero />}></Route>
-          <Route path='/gallery' element={<Gallery />}></Route>
-          <Route path='/kontakt' element={<Kontakte />}></Route>
-
-
+          <Route path='/preise' element={<Prezzi />}></Route>
+          <Route path='/' element={<Hero />}></Route>
+          <Route path='/galerie' element={<Gallery />}></Route>
+          <Route path='/kontakt' element={<Kontakt />}></Route>
         </Routes>
 
         <Footer />
