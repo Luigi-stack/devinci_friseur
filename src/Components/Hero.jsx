@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import homepage from '../Images/salon_hero.jpg'
 
 function Hero() {
   return (
@@ -9,7 +10,7 @@ function Hero() {
         <Row className="align-items-center"> {/* Allinea verticalmente */}
           <Col md={6} sm={12}> {/* Colonna immagine */}
             <img 
-              src="src/Images/salon_hero.jpg" 
+              src={homepage} 
               alt="Salon Hero" 
               className="img-fluid hero-image" /* Ridimensionamento automatico */
             />

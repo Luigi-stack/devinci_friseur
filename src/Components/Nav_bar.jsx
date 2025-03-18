@@ -6,8 +6,8 @@ function Nav_bar() {
       <nav className="navbar">
         <ul>
           <li><Link to="/">Startseite</Link></li>
-          <li><Link to="/gallery">Galerie</Link></li>
-          <li><Link to="/prices">Preise</Link></li>
+          <li><Link to="/galerie">Galerie</Link></li>
+          <li><Link to="/preise">Preise</Link></li>
           <li><a href="/kontakt">Kontakt</a></li>
         </ul>
       </nav>
