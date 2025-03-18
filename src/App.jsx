@@ -17,7 +17,6 @@ function App() {
         <Header />
         <Nav_bar />
 
-
         <Routes>
           <Route path='/preise' element={<Prezzi />}></Route>
           <Route path='/' element={<Hero />}></Route>
