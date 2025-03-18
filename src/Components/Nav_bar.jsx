@@ -5,7 +5,7 @@ function Nav_bar() {
     return (
       <nav className="navbar">
         <ul>
-          <li><Link to="/team">Startseite</Link></li>
+          <li><Link to="/">Startseite</Link></li>
           <li><Link to="/gallery">Galerie</Link></li>
           <li><Link to="/prices">Preise</Link></li>
           <li><a href="/kontakt">Kontakt</a></li>
